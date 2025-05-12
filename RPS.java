@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+//Using JFrame a UI Java Framework
 public class RPS extends JFrame implements ActionListener {
     private int players = 1;
     private int rounds = 3;
@@ -125,7 +125,7 @@ public class RPS extends JFrame implements ActionListener {
 
         scoreLabel.setText("Score: " + player1Score + " - " + player2Score);
     }
-
+// Logic to to changing rounds
     private void nextRound() {
         currentRound++;
         if (currentRound > rounds) {
